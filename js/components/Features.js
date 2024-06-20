@@ -22,9 +22,9 @@ class Features {
             case 2:
                 gHints.innerText = 'Hints: 💡💡✖️'
                 break;
-
             case 1:
                 gHints.innerText = 'Hints: 💡✖️✖️'
+                break;
             default:
                 gHints.innerText = 'Hints: ✖️✖️✖️'
                 break;

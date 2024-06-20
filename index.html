@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/styles/styles.css">
+    <title>Minesweeper - ITITIU21350</title>
+</head>
+
+<body onload="init()">
+    <div class="game-main">
+        <div class="game-options">
+            <button class="level-btn" onclick="handleLevel(4)">Easy 💣2</button>
+            <button class="level-btn" onclick="handleLevel(8)">Medium 💣12</button>
+            <button class="level-btn" onclick="handleLevel(12)">Hard 💣30</button></span>
+        </div>
+        <div class="game-header">
+            <span class="safe-click" onclick="showSafeCell()"></span>
+            <span class="hints" onclick="hintOn()"></span>
+            <span class="lives"></span>
+            <span class="player" onclick="restart()"></span>
+        </div>
+
+        <div class="game-board">
+            <table>
+            </table>
+        </div>
+
+        <div class="timer">00:00</div>
+        <div class="best-time"></div>
+
+        <button onclick="undo()">Undo 🔙</button>
+    </div>
+
+    <script src="./js/components/SoundManage.js"></script>
+    <script src="./js/components/Utils.js"></script>
+    <script src="./js/components/Timer.js"></script>
+    <script src="./js/components/Render.js"></script>
+    <script src="./js/components/Features.js"></script>
+    <script src="./js/components/Game.js"></script>
+    <script src="./js/script.js"></script>
+</body>
+
+</html>

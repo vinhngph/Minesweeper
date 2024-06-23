@@ -187,7 +187,7 @@ class Game {
             render.renderCell(i, j, ' ');
             cell.isMarked = false;
         }
-    
+
     }
 
     gameOver(status) {
